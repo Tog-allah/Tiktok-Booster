@@ -1,7 +1,7 @@
 services:
   - type: web # On définit le type de service comme un "worker" car ce n'est pas un site web.
     plan : free
-    name: tiktok-view-bot # Le nom que tu veux donner à ton service sur Render.
+    name: tiktok-Booster # Le nom que tu veux donner à ton service sur Render.
     env: python # L'environnement d'exécution, ici c'est Python.
     repo: https://github.com/Tog-allah/Tiktok-Booster.git # L'URL de ton dépôt GitHub.
     branch: main # La branche de ton dépôt à déployer.
