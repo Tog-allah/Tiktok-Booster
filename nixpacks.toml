@@ -1,8 +1,11 @@
-[nix]
-pkgs = ["pkgs.python3"]
+[variables]
+NIXPACKS_APT_PACKAGES = "libgl1-mesa-glx libglib2.0-0 libsm6 libxext6 libxrender-dev libgomp1 ffmpeg libsm6 libxext6"
 
-[phases.build]
-cmds = ["pip install -r requirements.txt"]
+[phases.setup]
+nixPkgs = ["python312", "gcc", "pkg-config"]
+
+[phases.install]
+cmds = ["pip install --upgrade pip"]
 
 [start]
 cmd = "python main.py"
