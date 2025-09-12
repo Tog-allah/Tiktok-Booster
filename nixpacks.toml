@@ -1,0 +1,3 @@
+[nix]
+pkgs = ["pkgs.libglvnd"]
+<!-- end list -->
