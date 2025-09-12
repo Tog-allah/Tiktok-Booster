@@ -1,2 +1,8 @@
 [nix]
-pkgs = ["pkgs.libglvnd"]
+pkgs = ["pkgs.python3"]
+
+[phases.build]
+cmds = ["pip install -r requirements.txt"]
+
+[start]
+cmd = "python main.py"
